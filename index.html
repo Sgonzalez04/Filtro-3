@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campers</title>
+    <link rel="stylesheet" href="estudiante.css">
+</head>
+<body>
+    <h1>Gestor y reporte de campers</h1>
+    <div class="agregar_estudiante">
+        <label>Numero de identificacion</label>
+        <input type="text" id="NumIdentificacion"> <br>
+        <label>Nombre Completo</label>
+        <input type="text" id="nombre"><br>
+        <label>Teléfono Celular</label>
+        <input type="text" id="celular"><br>
+        <label>Correo electrónico</label>
+        <input type="text" id="correo"><br>
+        <label>Grupo Campus</label>
+        <input type="text" id="grupo"><br>
+    </div>
+    <button onclick="agregar_estudiante()">Agregar</button>
+    <br>
+    <label for="buscarEstudiante">Buscar por Número de Identificación</label>
+    <input type="text" id="buscarEstudiante">
+    <button onclick="buscarEstudiante()">Buscar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Numero de identificación</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo Electrónico</th>
+                <th>Grupo</th>
+                <th>Campcoins</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <br>
+        <tbody class="estudiantes-lista">
+            <!--estudiantes -->
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+    <h1>Gestor de Conceptos</h1>
+    <h2>Agregar conceptos</h2>
+    <label for="descripcion">Descripción del concepto</label>
+    <input type="text" id="descripcion"><br>
+    <label for "valor">Valor del concepto en CampCoins</label>
+    <input type="number" id="valor"><br>
+    <button onclick="agregarConcepto()">Agregar</button>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Descripción del Concepto</th>
+                <th>Valor del Concepto en CampCoins</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="conceptos-lista">
+            <!-- Conceptos -->
+        </tbody>
+    </table>
+
+    <h1>Consignación y descuento</h1>yy
+    <h2>Agregar Campcoins</h2>
+    <label for="estudiante">Numero de identificacion del estudiante</label>
+    <input type="text" id="estudiante"><br>
+    <label for="id">Id gestor conceptos para consignación o descuento</label>
+    <input type="number" id="id"><br>
+    <button onclick="realizarOperacion()">Cambiar</button>    
+
+    <script src="estudiantes.js"></script>
+</body>
+</html>
